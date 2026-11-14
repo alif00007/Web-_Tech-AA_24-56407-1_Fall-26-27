@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Museum Visitor Feedback</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Museum Visitor Feedback</h2>
+
+      <label>Visitor Name:</label>
+      <input type="text" id="visitorName" />
+
+      <label>City:</label>
+      <select id="city">
+        <option value="">Select City</option>
+        <option value="Barcelona">Barcelona</option>
+        <option value="Paris">Paris</option>
+        <option value="Rome">Rome</option>
+      </select>
+
+      <label>Rating (1-5):</label>
+      <input type="number" id="rating" />
+
+      <label>Comment:</label>
+      <textarea id="comment"></textarea>
+
+      <br /><br />
+
+      <button onclick="addFeedback()">Add Feedback</button>
+      <button onclick="removeLast()">Remove Last</button>
+
+      <h3>Feedback Records</h3>
+
+      <div id="feedbackList"></div>
+
+      <p id="summary"></p>
+      <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
