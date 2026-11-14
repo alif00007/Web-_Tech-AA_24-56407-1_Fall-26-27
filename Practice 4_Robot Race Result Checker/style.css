@@ -1,0 +1,41 @@
+.container {
+  width: 350px;
+  padding: 15px;
+  border: 2px solid black;
+  margin: 30px auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 95%;
+  padding: 6px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
