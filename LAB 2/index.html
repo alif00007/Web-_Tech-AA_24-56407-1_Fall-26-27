@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Library Member Profile</title>
+
+    <link rel="icon" href="C:\Users\m alif hasan\Downloads\library.png" />
+  </head>
+
+  <body>
+    <h1>Lab Task 2</h1>
+
+    <h2>Library Member Profile</h2>
+
+    <p>
+      Welcome to our <b>Library Membership</b> registration page. Join our
+      library and enjoy access to a wide range of
+      <i>books and learning resources.</i>
+    </p>
+
+    <p>
+      Visit our
+      <a href="https://booklandlibrary.org/" target="_blank">
+        Library Website
+      </a>
+    </p>
+
+    <h2>Library</h2>
+
+    <img
+      src="C:\Users\m alif hasan\Downloads\library-img-2(1).jpg"
+      alt="Library Image"
+      width="300"
+    />
+
+    <br /><br />
+
+    <h2>Library Members List</h2>
+
+    <table border="1">
+      <tr>
+        <th>Member ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Image</th>
+      </tr>
+
+      <tr>
+        <td>101</td>
+        <td>Alif Hasan</td>
+        <td>alif@example.com</td>
+        <td>
+          <img
+            src="C:\Users\m alif hasan\Downloads\user.png"
+            alt="Member Image"
+            width="80"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>102</td>
+        <td>Saleh Ahmed</td>
+        <td>saleh@example.com</td>
+        <td>
+          <img
+            src="C:\Users\m alif hasan\Downloads\user.png"
+            alt="Member Image"
+            width="80"
+          />
+        </td>
+      </tr>
+    </table>
+
+    <br />
+
+    <h2>Membership Registration Form</h2>
+
+    <form action="" method="GET">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <br /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required />
+
+      <br /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <br /><br />
+
+      <label>Gender:</label>
+
+      <input type="radio" id="male" name="gender" value="Male" required />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label>
+
+      <br /><br />
+
+      <label for="membership">Membership Type:</label>
+
+      <select id="membership" name="membership" required>
+        <option value="">-- Select Membership --</option>
+        <option value="Regular">Regular</option>
+        <option value="Premium">Premium</option>
+        <option value="Student">Student</option>
+      </select>
+
+      <br /><br />
+
+      <label for="profile">Profile Picture:</label>
+      <input type="file" id="profile" name="profile" />
+
+      <br /><br />
+
+      <label for="address">Address:</label>
+      <br />
+
+      <textarea
+        id="address"
+        name="address"
+        rows="4"
+        cols="40"
+        placeholder="Enter your address"
+        required
+      ></textarea>
+
+      <br /><br />
+
+      <input type="checkbox" id="terms" name="terms" required />
+
+      <label for="terms"> I agree to the terms and conditions. </label>
+
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
