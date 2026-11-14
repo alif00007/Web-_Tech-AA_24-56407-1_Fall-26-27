@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bicycle Station Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Bicycle Station Tracker</h2>
+
+      <label>Station:</label>
+      <select id="station">
+        <option value="City Centre">City Centre</option>
+        <option value="Riverside">Riverside</option>
+      </select>
+
+      <label>Number of Bicycles:</label>
+      <input type="number" id="quantity" />
+
+      <br /><br />
+
+      <button onclick="borrowBike()">Borrow</button>
+      <button onclick="returnBike()">Return</button>
+
+      <h3>Available Bicycles</h3>
+
+      <p id="stationInfo"></p>
+      <p id="total"></p>
+      <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
