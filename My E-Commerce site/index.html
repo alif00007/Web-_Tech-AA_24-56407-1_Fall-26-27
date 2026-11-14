@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h2>My E-Commerce Store</h2>
+    </header>
+
+    <main>
+      <!-- Add to Cart Form -->
+      <form id="cartForm">
+        <fieldset>
+          <legend>Add to Cart</legend>
+
+          <label>Product Name:</label>
+          <input type="text" value="Premium T-Shirt" readonly />
+
+          <label>Quantity:</label>
+          <input type="number" id="quantity" value="1" min="1" />
+
+          <label>Price per item:</label>
+          <p>500 Tk</p>
+
+          <label>Total Price:</label>
+          <input type="text" id="totalPrice" value="500 Tk" readonly />
+
+          <p id="warning"></p>
+        </fieldset>
+      </form>
+
+      <!-- Checkout Form -->
+      <form id="checkoutForm">
+        <fieldset>
+          <legend>Checkout</legend>
+
+          <label>Full Address:</label>
+          <textarea
+            id="address"
+            placeholder="Enter your full address"
+            required
+          ></textarea>
+
+          <label>Delivery Location:</label>
+          <select id="delivery">
+            <option value="50">Inside Dhaka</option>
+            <option value="120">Outside Dhaka</option>
+          </select>
+
+          <label>Delivery Charge:</label>
+          <p id="deliveryCharge">50 Tk</p>
+
+          <label>Grand Total:</label>
+          <p id="grandTotal">550 Tk</p>
+
+          <label>
+            <input type="checkbox" id="terms" />
+            I agree to all the terms and conditions.
+          </label>
+
+          <button type="submit" id="submitBtn" style="display: none">
+            Submit
+          </button>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer>
+      <p>Copyright © 2026 Mr. E's Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
