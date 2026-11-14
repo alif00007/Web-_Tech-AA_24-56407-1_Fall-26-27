@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Robot Exhibition Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Robot Exhibition Registration</h2>
+
+      <label>Student Name:</label>
+      <input type="text" id="studentName" />
+
+      <label>Email:</label>
+      <input type="text" id="email" />
+
+      <label>Robot Type:</label>
+      <select id="robotType" onchange="showRobotInfo()">
+        <option value="">Select Robot</option>
+        <option value="Delivery Robot">Delivery Robot</option>
+        <option value="Cleaning Robot">Cleaning Robot</option>
+      </select>
+
+      <p id="robotInfo"></p>
+
+      <label>Visit Time:</label>
+
+      <input type="radio" name="visitTime" value="Morning" />
+      Morning
+
+      <input type="radio" name="visitTime" value="Afternoon" />
+      Afternoon
+
+      <br /><br />
+
+      <input type="checkbox" id="confirm" onchange="checkConfirm()" />
+      I confirm my registration
+
+      <br /><br />
+
+      <button id="registerBtn" onclick="register()" disabled>Register</button>
+
+      <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
